@@ -1,32 +1,22 @@
 .form-card {
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  background-color: transparent; 
   transition: 0.3s;
   border-radius: 5px;
   width: 400px; /* Match card width */
   margin-left: 0; /* Remove left margin */
 }
 
-.form-card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
-}
+
 
 .form-title {
   border-bottom: 1px solid #f0f0f0;
   padding: 15px 20px;
-  background-color: #f8f9fa;
+  background-color: #175f9e;
   margin-bottom: 0;
 }
 
-.form-title h2 {
-  margin: 0;
-  font-size: 1.5rem;
-  color: #333;
-}
 
-.form-container {
-  padding: 20px;
-}
+
 
 .form-group {
   margin-bottom: 15px;
@@ -48,8 +38,3 @@
   box-sizing: border-box;
 }
 
-.form-control:focus {
-  outline: none;
-  border-color: #007bff;
-  box-shadow: 0 0 0 2px rgba(0,123,255,0.25);
-}
