@@ -1,0 +1,100 @@
+.card-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card {
+  width: 300px;
+  height: 420px;
+  border-radius: 4px;
+  background: #fff;
+  color: #444;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.14);
+  position: relative; /* IMPORTANT pour le flip */
+}
+
+/* COVER IMAGE */
+.card .cover {
+  height: 100px;
+  overflow: hidden;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.card .cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* USER IMAGE */
+.card .user {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: -60px auto 0;
+  border: 4px solid #fff;
+  overflow: hidden;
+  background: #fff;
+}
+
+.card .user img {
+  width: 100%;
+  display: block;
+}
+
+/* CONTENT */
+.card .content {
+  padding: 10px 20px;
+}
+
+.card .name {
+  text-align: center;
+  font-size: 22px;
+  margin: 10px 0 0;
+}
+
+.card .profession {
+  text-align: center;
+  color: #999;
+  margin-bottom: 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.card .footer {
+  text-align: center;
+  color: #999;
+  margin-top: 30px;
+}
+.card .stats-container {
+  display: flex;          /* Arrange items in a row */
+  justify-content: space-between; /* Even spacing */
+  margin-top: 50px;
+  border-top: 1px solid #eee; /* optional top border */
+}
+
+.card .stats {
+  flex: 1;                /* Each stat takes equal width */
+  text-align: center;
+  padding: 0 10px;        /* spacing inside */
+  border-left: 1px solid #eee; /* left border for separation */
+}
+
+.card .stats:first-child {
+  border-left: none;      /* remove left border for first item */
+}
+
+.card .stats h4 {
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+
+.card .stats p {
+  color: #777;
+  margin: 0;
+}
+

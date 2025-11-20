@@ -1,0 +1,28 @@
+.card-footer {
+  padding: 10px 0 0;
+  border-top: 1px solid #eee;
+  text-align: center;
+}
+
+.card-footer .rating {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #777;
+}
+
+.card-footer .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.card-footer .social-links a {
+  color: #555;
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.card-footer .social-links a:hover {
+  color: #2196F3;
+}

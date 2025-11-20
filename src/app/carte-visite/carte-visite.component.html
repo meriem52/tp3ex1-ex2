@@ -1,0 +1,25 @@
+<div class="container">
+  <!-- Carte avec les données -->
+  <app-card-container
+    [name]="name"
+    [profession]="profession"
+    [motto]="motto"
+    [jobDescription]="jobDescription"
+    [followers]="followers"
+    [following]="following"
+    [projects]="projects"
+    [image]="image">
+  </app-card-container>
+
+  <!-- Formulaire avec two-way data binding -->
+  <app-profile-form
+    [(name)]="name"
+    [(profession)]="profession"
+    [(motto)]="motto"
+    [(jobDescription)]="jobDescription"
+    [(followers)]="followers"
+    [(following)]="following"
+    [(projects)]="projects"
+    [(image)]="image">
+  </app-profile-form>
+</div>
