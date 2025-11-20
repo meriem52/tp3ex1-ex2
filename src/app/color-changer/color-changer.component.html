@@ -1,21 +1,17 @@
 <div class="container mt-5">
-
-  <div class="card p-3"
-       [style.backgroundColor]="currentColor">
-
+  <div #colorDiv class="card p-3">
     <label>Change Color:</label>
-
-    <!-- Référence locale -->
+    
     <input #colorInput type="text" class="form-control">
-
-    <button class="btn btn-primary mt-3" (click)="changeColor()">
+    
+    <button class="btn btn-primary mt-3" 
+            (click)="changeColor(colorInput, colorDiv)">
       Change
     </button>
-
-    <button class="btn btn-secondary mt-3" (click)="resetColor()">
+    
+    <button class="btn btn-secondary mt-3" 
+            (click)="resetColor(colorDiv)">
       Reset
     </button>
-
   </div>
-
 </div>

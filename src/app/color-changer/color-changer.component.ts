@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-color-changer',
@@ -7,19 +7,12 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
   styleUrls: ['./color-changer.component.css']
 })
 export class ColorChangerComponent {
-
-  currentColor: string = 'grey';
-
-  // On récupère l'input du DOM
-  @ViewChild('colorInput') colorInput!: ElementRef;
-
-  changeColor() {
-    const value = this.colorInput.nativeElement.value;
-    this.currentColor = value;
+  
+  changeColor(colorInput: HTMLInputElement, colorDiv: HTMLDivElement) {
+    colorDiv.style.backgroundColor = colorInput.value;
   }
 
-  resetColor() {
-    this.currentColor = 'grey';
-    this.colorInput.nativeElement.value = '';  // optionnel : vide l'input
+  resetColor(colorDiv: HTMLDivElement) {
+    colorDiv.style.backgroundColor = 'grey';
   }
 }
